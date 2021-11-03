@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda mesas</title>
+</head>
+<body>
+    <div id="app">
+        <div class="results-container">
+            <h2>Tienda de mesas</h2>
+            <table>
+                <tr class="header-table">
+                    <th>Material</th>
+                    <th>Patas</th>
+                    <th>Tamaño</th>
+                    <th>Color</th>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <form id="addMesa">
+                <h3>Formulario para añadir mesas</h3>
+                <div>
+                    <label for="addMesaMaterial">Material: </label>
+                    <input type="text" name="material" id="addMesaMaterial" required>
+                </div>
+                <div>
+                    <label for="addMesaSize">Tamaño: </label>
+                    <input type="number" name="size" id="addMesaSize" required>
+                </div>
+                <div>
+                    <label for="addMesaColor">Color: </label>
+                    <input type="text" name="color" id="addMesaColor" required>
+                </div>
+                <div>
+                    <label for="addMesaLegs">Número de patas: </label>
+                    <input type="number" name="legs" id="addMesaLegs" required>
+                </div>
+                <div>
+                    <input type="submit" value="Añadir">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <label for="deleteLegsinput">Eliminar mesas con una cantidad de patas</label>
+            <input placeholder="nº de patas" type="number" name="" id="deleteLegsinput">
+        </div>
+        <hr>
+        <div>
+            <label for="updateGranateInput">Cambiar el color de las mesas de un color dado a granate</label>
+            <input placeholder="color" type="text" name="" id="updateGranateInput">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
